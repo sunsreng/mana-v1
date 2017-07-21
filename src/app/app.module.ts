@@ -1,20 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCheckboxModule} from '@angular/material';
+import { FormsModule } from '@angular/forms';
+import {MdButtonModule, MdCheckboxModule, MdInputModule} from '@angular/material';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     MdButtonModule,
-    MdCheckboxModule
+    MdCheckboxModule,
+    MdInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
