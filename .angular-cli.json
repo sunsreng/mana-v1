@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "mana"
+    "name": "material2-start"
   },
   "apps": [
     {
@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "theme.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -30,9 +31,7 @@
     }
   ],
   "e2e": {
-    "protractor": {
-      "config": "./protractor.conf.js"
-    }
+    "protractor": {}
   },
   "lint": [
     {
@@ -46,9 +45,7 @@
     }
   ],
   "test": {
-    "karma": {
-      "config": "./karma.conf.js"
-    }
+    "karma": {}
   },
   "defaults": {
     "styleExt": "css",
